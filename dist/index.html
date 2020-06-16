@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="main.js"></script>
+    <script src="https://kit.fontawesome.com/366e86972c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="side-menu.css">
+    <link rel="stylesheet" href="drop-down.css">
+    <link rel="stylesheet" href="image-carousel.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="icon">
+            <div class="hamburger"></div>
+        </div>
+
+        <div class="menu">
+            <div class="dropdown">
+                <button class="dropdown-btn">Home</button>
+                <ul class="dropdown-list">
+                    <li class="dropdown-links">1</li>
+                    <li class="dropdown-links">2</li>
+                    <li class="dropdown-links">3</li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn">Gallery</button>
+                <ul class="dropdown-list">
+                    <li class="dropdown-links">1</li>
+                    <li class="dropdown-links">2</li>
+                    <li class="dropdown-links">3</li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn">Contact Us</button>
+                <ul class="dropdown-list">
+                    <li class="dropdown-links">1</li>
+                    <li class="dropdown-links">2</li>
+                    <li class="dropdown-links">3</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="side-menu">
+        <ul class="nav-list">
+            <li class="nav-link">Home</li>
+            <li class="nav-link">About</li>
+            <li class="nav-link">Gallery</li>
+            <li class="nav-link">Contact Us</li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <div class="slider-container">
+            <div class="slider">
+
+                <div class="slide current end" style="background-image: url('./images/engineer-4915445_1280.webp')">
+                </div>
+                <div class="slide" style="background-image: url('./images/landscape-5255326_1280.webp')"></div>
+                <div class="slide" style="background-image: url('./images/sea-5237374_1280.webp')"></div>
+                <div class="slide" style="background-image: url('./images/water-lily-5269396_1280.webp')"></div>
+                <div class="slide" style="background-image: url('./images/wind-power-plant-5239642_1280.webp')"></div>
+                <div class="slide"
+                    style="background-image: url('https://images.unsplash.com/photo-1588779481061-1706804c9556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=60')">
+                </div>
+                <div class="slide first-duplicate end"
+                    style="background-image: url('./images/engineer-4915445_1280.webp')"></div>
+            </div>
+        </div>
+        <button id="next" class="button"><i class="fas fa-chevron-right"></i></button>
+        <button id="prev" class="button"><i class="fas fa-chevron-left"></i></button>
+        <div class="dots-nav">
+            <button class="dot current-dot"></button>
+            <button class="dot"></button>
+            <button class="dot"></button>
+            <button class="dot"></button>
+            <button class="dot"></button>
+            <button class="dot"></button>
+        </div>
+    </div>
+</body>
+
+</html>

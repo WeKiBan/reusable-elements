@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,300&display=swap');
+
+:root {
+  --font-color: rgb(255, 255, 255);
+  --main-background-color: #55cfff80;
+  --side-menu-background-color: rgba(78, 78, 78, 0.486);
+  --header-color: rgba(0, 0, 0, 0.452);
+  --font-family: lato;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--main-background-color);
+  font-family: var(--font-family);
+}
+
+.header {
+  height: 6rem;
+  background-color: rgba(0, 0, 0, 0.452);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.side-menu {
+  background-color: var(--side-menu-background-color);
+  width:25rem;
+  height: calc(100vh - 6rem);
+  transition: ease-in-out 0.5s;
+  overflow: hidden;
+  margin-left: -25rem;
+  position: absolute;
+  
+}
+
+.open{
+  margin-left: 0;
+}
+
+.nav-list {
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+}
+
+.nav-link {
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.219);
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  font-weight: 100;
+  color: var(--font-color);
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  width: 25rem;
+}
+
+.nav-link:hover {
+  font-size: 2rem;
+  font-weight: 300;
+  background-color: rgba(255, 255, 255, 0.274);
+  border-bottom: solid 0.1rem white;
+}
+
+.icon {
+  position: relative;
+  margin-left: 1rem;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 100%;
+  height: 0.5rem;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hamburger:before,
+.hamburger:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.5rem;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  left: 0;
+}
+
+.hamburger:before {
+  top: -1.3rem;
+}
+.hamburger:after {
+  top: 1.3rem;
+}
+
+.icon.active .hamburger {
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+.icon.active .hamburger:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.icon.active .hamburger:after {
+  top: 0;
+  transform: rotate(-45deg);
+}
