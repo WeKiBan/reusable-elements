@@ -34,6 +34,7 @@ body {
   overflow: hidden;
   margin-left: -25rem;
   position: absolute;
+  z-index: 999;
   
 }
 
